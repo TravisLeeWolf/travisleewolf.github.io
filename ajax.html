@@ -15,12 +15,9 @@
         <button id="button">Click me</button>
         <!--Below is the JavaScript code-->
         <script type="text/javascript">
-            $.get("data.txt", function(data){
-                alert(data);
-            });
-            $("#button").click(function(){
-                alert("Working!");
-            });
+           $.ajax("data.txt").done(function(data){
+               alert(data);
+           });
         </script>
     </body>
 </html>
