@@ -17,6 +17,9 @@
         <script type="text/javascript">
            $.ajax("data.txt").done(function(data){
                alert(data);
+           })
+           .fail(function(){
+               alert("Could not get data.")
            });
         </script>
     </body>
