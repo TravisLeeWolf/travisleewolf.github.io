@@ -3,7 +3,7 @@
     <head>
         <title>AJAX</title>
         <!--Loading jQuery in to the page-->
-        <script src="jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <!--Below is the CSS code-->
         <style type="text/css">
         </style>
@@ -12,13 +12,13 @@
         <h2>AJAX</h2>
         <p>Using AJAX to use external files in real-time without reloading the page.</p>
         <hr>
-        <button>Click me</button>
+        <button id="button">Click me</button>
         <!--Below is the JavaScript code-->
         <script type="text/javascript">
             $.get("data.txt", function(data){
                 alert(data);
             });
-            $("button").click(function(){
+            $("#button").click(function(){
                 alert("Working!");
             });
         </script>
